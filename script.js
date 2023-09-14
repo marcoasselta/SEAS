@@ -2,6 +2,8 @@
 let numCpf = document.getElementById('fCPF')
 
 let habName = document.querySelector('#nome')
+let habTel = document.querySelector('#telefone')
+let habEnv = document.querySelector('#env')
 
 
 
@@ -40,15 +42,31 @@ cpf = cpf.value.replace(/\.|-/g,"")
     somaD2 = (somaD2*10)%11
 
 
-    if(somaD1 == cpf[9] && somaD2 == cpf[10]){
+    if(somaD1 == cpf[9] & somaD2 == cpf[10]){
         console.log('CPF Válido!')
         habName.disabled = false
+        habTel.disabled = false
+        habEnv.disabled = false
         return true;
     }else{
         console.log('CPF Inválido!')
         habName.disabled = true
+        habTel.disabled = true
+        habEnv.disabled = true
         return false;
     }
 
 }
 
+function notVazio(nome,telefone){
+
+    if(nome.value != "" & telefone != ""){
+        //habilita o comentarrio
+        console.log("Todos os campos!")
+        
+
+    }else{
+        console.log("Preencha todos os campos!")
+        
+    }
+}

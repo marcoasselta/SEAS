@@ -8,12 +8,12 @@
 <body>
     <div>    
         <label for="fCPF">CPF:</label><br>
-        <input type="text" id="fCPF" maxlength="14"><br><br>
+        <input type="text" id="fCPF" maxlength="14" oninput="isCpf(numCpf)"><br><br>
 
         <label for="nome">Nome Completo:</label><br>
         <input type="text" id="nome" disabled><br><br>
 
-        <input type="button" onclick="isCpf(numCpf)" value="Enviar">
+        <input type="button" value="Enviar">
     </div>  
 
     <script src="/script.js"></script>

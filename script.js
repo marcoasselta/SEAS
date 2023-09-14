@@ -9,7 +9,7 @@ console.log(habName)
 
 function isCpf(cpf = 0){
 
-let cpf = cpf.value.replace(/\.|-/g,"")
+cpf = cpf.value.replace(/\.|-/g,"")
 
 
     let somaD1 = 0

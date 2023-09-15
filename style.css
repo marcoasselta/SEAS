@@ -1,0 +1,13 @@
+#container {
+	margin: auto; /*em relação a margem da página*/
+	padding: 25px;  /*em relação a parte interna do objeto*/
+    width: 10%;
+    overflow: hidden;
+    background-color: #08D18B;
+}
+
+body {
+    background-color: #04704B;
+    
+
+}

@@ -60,13 +60,17 @@ cpf = cpf.value.replace(/\.|-/g,"")
 
 function notVazio(nome,telefone){
 
-    if(nome.value != "" & telefone != ""){
+    if(nome.value != ""){
         //habilita o comentarrio
-        console.log("Todos os campos!")
+        if(telefone.value != ""){
+            console.log("Todos os campos!")
+            document.getElementById('obs').type = 'text'
+            document.getElementById('observ').innerHTML = 'Observação:'
+        }else{
+            console.log("Preencha todos os campos!")  
+        }
         
-
     }else{
-        console.log("Preencha todos os campos!")
-        
+        console.log("Preencha todos os campos!")  
     }
 }

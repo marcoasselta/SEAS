@@ -9,18 +9,18 @@
 <body>
     <div id="container">  
         <form action="./index.html">  
-        <label for="fCPF">CPF:</label><br>
+        <label id="label" name="cpf" for="fCPF">CPF:</label><br>
         <input type="text" id="fCPF" maxlength="14" oninput="isCpf(numCpf)"><br><br>
 
-        <label for="nome">Nome Completo:</label><br>
+        <label id="label" name="nome" for="nome">Nome Completo:</label><br>
         <input type="text" id="nome" onblur="notVazio(habName,habTel)" disabled><br><br>
 
-        <label for="telefone">Telefone:</label><br>
+        <label id="label" name="tel" for="telefone">Telefone:</label><br>
         <input type="text" id="telefone" onblur="notVazio(habName,habTel)" disabled><br><br>
 
-        <label id="observ" for="obs"></label><br>
+        <label id="label" name="obs" id="observ" for="obs">Observação:</label><br>
         <input type="hidden" id="obs" disabled><br><br>
-
+        
         <input type="submit" id="env" value="Finalizar" disabled>
         </form>
     </div>  

@@ -4,7 +4,7 @@ let numCpf = document.getElementById('fCPF')
 let habName = document.querySelector('#nome')
 let habTel = document.querySelector('#telefone')
 let habEnv = document.querySelector('#env')
-
+let raiz = document.documentElement.style
 
 
 console.log(habName)
@@ -65,7 +65,9 @@ function notVazio(nome,telefone){
         if(telefone.value != ""){
             console.log("Todos os campos!")
             document.getElementById('obs').type = 'text'
-            document.getElementById('observ').innerHTML = 'Observação:'
+            raiz.setProperty('--obsColor', '#FFF')
+            document.getElementById('obs').disabled = false
+            
         }else{
             console.log("Preencha todos os campos!")  
         }

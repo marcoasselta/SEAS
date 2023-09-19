@@ -1,13 +1,150 @@
-#container {
-	margin: auto; /*em relação a margem da página*/
-	padding: 25px;  /*em relação a parte interna do objeto*/
-    width: 10%;
-    overflow: hidden;
-    background-color: #08D18B;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+:root{
+    --obsColor: #5D5D5D;
+
+}
 body {
-    background-color: #04704B;
+    display: flex;
+    padding: 43px 0px 43px 0px;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+#container {
+   
+	width: 416px;
+    height: auto;
+    padding-bottom: 30px;
+    justify-content: center;
     
 
+    border-radius: 10px;
+    background: #5D5D5D;
+    backdrop-filter: blur(2px);
+
 }
+
+
+#container label[name="cpf"]{
+    display: inline-flex;
+    margin-top: 33px;
+    margin-left: 46px;
+
+    color: #FFF;
+    font-family: Monda;
+    font-size: 20px;
+    font-style: normal;
+}
+
+#container label[name="nome"]{
+    display: inline-flex;
+    margin-top: 30px;
+    margin-left: 46px;
+
+    color: #FFF;
+    font-family: Monda;
+    font-size: 20px;
+    font-style: normal;
+}
+
+#container label[name="tel"]{
+    display: inline-flex;
+    margin-top: 30px;
+    margin-left: 46px;
+
+    color: #FFF;
+    font-family: Monda;
+    font-size: 20px;
+    font-style: normal;
+}
+
+#container label[name="obs"]{
+    display: inline-flex;
+    margin-top: 30px;
+    margin-left: 46px;
+
+    color: var(--obsColor);
+    font-family: Monda;
+    font-size: 20px;
+    font-style: normal;
+}
+
+#fCPF {
+    display: inline-flex;
+    margin-top: 2px;
+    margin-left: 46px;
+    
+    width: 324px;
+    height: 44px;
+    
+    font-size: 20px;
+    border-radius: 5px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+#nome {
+    display: inline-flex;
+    margin-top: 2px;
+    margin-left: 46px;
+    
+    width: 324px;
+    height: 44px;
+    
+    font-size: 20px;
+    border-radius: 5px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+#telefone {
+    display: inline-flex;
+    margin-top: 2px;
+    margin-left: 46px;
+    
+    width: 324px;
+    height: 44px;
+    
+    font-size: 20px;
+    border-radius: 5px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+#obs {
+    display: inline-flex;
+    margin-top: 2px;
+    margin-left: 46px;
+    
+    width: 324px;
+    height: 44px;
+    
+    font-size: 20px;
+    border-radius: 5px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+#env {
+    display: inline;
+    margin-left: 25%;
+    margin-top: 30px;
+    
+    
+    
+    width: 200px;
+    height: 58px;
+    
+    font-size: 20px;
+    border-radius: 10px;
+    background: #D9D9D9;
+    backdrop-filter: blur(2px);
+    cursor: pointer;
+}
+
